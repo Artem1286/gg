@@ -1,0 +1,53 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+   background-color:rgb(14, 183, 255);
+   text-align: center;
+}
+   gradient-bg {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+p
+{
+    margin: 0;
+  height: 20px; /* Высота всего экрана */
+}
+p:hover{
+    color: whitesmoke;
+    border: solid whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    transition: padding 1s linear;
+    }
+    .link-header {
+    padding: 12px 30px;
+    background-color: #0B63F6;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Скругление */
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Плавная анимация */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Тень */
+    text-decoration: none;
+}
+
+.link-header:hover {
+    background-color: #003CC5;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.2); /* Усиление тени */
+    transform: translateY(-2px); /* Всплытие */
+}
+
+.link-header:active {
+    transform: translateY(1px); /* Нажатие */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
